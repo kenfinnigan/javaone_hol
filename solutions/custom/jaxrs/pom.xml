@@ -32,6 +32,9 @@
           <groupId>org.wildfly.swarm</groupId>
           <artifactId>wildfly-swarm-plugin</artifactId>
           <version>2016.9</version>
+          <configuration>
+            <mainClass>org.javaee7.jaxrs.endpoint.Main</mainClass>
+          </configuration>
           <executions>
             <execution>
               <goals>
@@ -43,22 +46,25 @@
       </plugins>
     </build>
 
-    <dependencyManagement>
-      <dependencies>
-        <dependency>
-          <groupId>org.wildfly.swarm</groupId>
-          <artifactId>bom</artifactId>
-          <version>2016.9</version>
-          <scope>import</scope>
-          <type>pom</type>
-        </dependency>
-      </dependencies>
-    </dependencyManagement>
-
+  <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
-        <artifactId>jaxrs</artifactId>
+        <artifactId>bom</artifactId>
+        <version>2016.9</version>
+        <scope>import</scope>
+        <type>pom</type>
       </dependency>
     </dependencies>
+  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.wildfly.swarm</groupId>
+      <artifactId>jaxrs</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.wildfly.swarm</groupId>
+      <artifactId>logging</artifactId>
+    </dependency>
+  </dependencies>
 </project>
