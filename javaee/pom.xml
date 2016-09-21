@@ -24,7 +24,6 @@
       <module>ejb-stateless</module>
       <module>jaxrs</module>
       <module>jaxrs-angular</module>
-      <module>websocket-chat</module>
     </modules>
 
     <dependencies>
