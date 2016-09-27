@@ -14,20 +14,4 @@
     <name>Java EE 7 Sample: jaxrs - angularjs</name>
     <description>Angular JS consuming REST services</description>
 
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.wildfly.swarm</groupId>
-          <artifactId>wildfly-swarm-plugin</artifactId>
-          <version>2016.9</version>
-          <executions>
-            <execution>
-              <goals>
-                <goal>package</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </build>
 </project>
